@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByeCar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;1,100&display=swap');
+        .barra{
+            
+            width: 3025px;
+            height: 120px;
+
+            background: #303030;
+            
+        }
+        #dnc{
+           background: #303030;
+           position: absolute;
+            height: 115px;     
+        }
+
+
+        h1{
+            position: absolute;
+            width: 1263px;
+            height: 56px;
+            left: 200px;
+
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+            line-height: 56px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #FFFFFF;
+        }
+        #texto{
+            position: absolute;
+            width: 704px;
+            height: 88px;
+            top: 200px;
+
+            font-family: 'Verdana';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 54px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #265E70;
+        }
+        .moto{
+            position: absolute;
+            left: 18.57%;
+            right: 46.58%;
+            top: 99.53%;
+            bottom: 26.96%;
+        }
+        #conheca{
+            position: absolute;
+            width: 614px;
+            height: 44px;
+            left: 31cm;
+            top: 180px;
+
+            font-family: 'Verdana';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 44px;
+            /* identical to box height */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #265E70;
+
+
+
+        }
+        
+       
+        
+
+        
+        #descricao{
+            position: absolute;
+            width: 541px;
+            height: 40px;
+           
+
+            font-family: 'Verdana';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 33px;
+            line-height: 40px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: #FFFFFF;
+
+        }
+        #imagem2{
+            position: absolute;
+            top:70px;
+            left:90px;
+            height: 10cm;
+            
+            
+        }
+        #seta2{
+            position: absolute;
+            width: 306px;
+            height: 302px;
+
+            background: url(.png);
+            left: 27cm;
+            top: 590px;
+            position: absolute;
+            width: 540px;
+            height: 504px;
+
+        }
+        #seta{
+            position: absolute;
+            width: 306px;
+            height: 302px;
+
+            background: url(.png);
+            left: 46cm;
+            top: 590px;
+            position: absolute;
+            width: 540px;
+            height: 504px;
+
+        }
+        #partir{
+            position: absolute;
+            top:200px;
+            left:165px;
+            height: 10cm;
+            
+
+            font-family: 'Verdana';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 31px;
+            line-height: 38px;
+            /* identical to box height */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: white
+            }
+        #valor{
+            
+            position: absolute;
+            top:250px;
+            left:165px;
+            height: 10cm;
+            
+
+            font-family: 'Verdana';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 31px;
+            line-height: 38px;
+            /* identical to box height */
+
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            color: black;
+            
+            }
+        #img{
+            object-fit: cover;
+            height: 500px;
+            width: 500px;
+        }
+        
+         
+        ul li {
+            display: flex;
+            flex-direction: column;
+            List-style-type: none;
+            margin: 0 auto;
+            border-radius: 15px;
+            text-align: center;
+            min-width: 940px;
+            justify-content: space-around;
+            padding: 1rem;  
+            
+
+        }
+        #moto{
+            max-width:200px;
+            max-height:150px;
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            List-style-type: none;
+            margin: 0 auto;
+            border-radius: 15px;
+            text-align: center;
+            left: 80cm;
+            justify-content: space-around;
+            padding: 1rem;  
+
+        }
+        
+        
+       .cards{
+            max-width: 540px;
+            min-height: 540px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+            
+       }
+
+        
+
+       
+    </style>
+</head>
+<body>
+    <nav>
+    <div class="barra">
+        <img id="dnc" src="image 7.png">
+        <h1>ByeCar</h1>
+    </div>
+    <div id="texto">
+        <p>Ter <b>uma moto</b> por assinatura nunca foi tão fácil!</p>
+        <img class="moto" src="Intersect.png">
+    </div>
+    </nav>
+    <nav>
+        <div id="seta2">
+            <img src="seta2.png">
+        </div>   
+    
+        <div class="motos">
+            <p id="conheca">Conheça nossas motos!</p>
+        </div>
+            
+        
+        <div class="carrossel">
+            <botao onclick="show(-1)">
+                <img src="seta2.png">
+            </botao>
+            <ul class="cards">
+                <li class="cardmoto">
+                    <hi>Scooter Elétrica Voltz EV1</hi>
+                    <img id="moto" src="image moto.png">
+                    <p>A partir de</p>
+                    <p>R$ 619,90</p>
+                </li>
+                <li class="cardmoto">
+                    <hi>Honda CB 500X</hi>
+                    <img id ="moto"src="imagem5.png">
+                    <p>A partir de</p>
+                    <p>R$ 619,90</p>
+                </li>
+                <button onclick="show(+1)">
+                    <img src="seta.png" alt="Flecha Right">
+                </button>
+
+            </ul>
+        </div>
+
+
+              
+        
+  
+    </nav>
+    </body>
+    <script src="/script.js"></script>
+
+</html>
